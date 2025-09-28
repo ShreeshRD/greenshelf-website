@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from './ProductCard.module.css';
 
 interface ProductCardProps {
   product: {
@@ -10,14 +11,13 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div className="card shadow-sm mb-3">
-      <div className="card-body">
-        <h5 className="card-title">{product.name}</h5>
-        <p className="card-text">by {product.company}</p>
-        <Link href={`/products/${product.id}`} className="btn btn-primary">
-          View Details
-        </Link>
-      </div>
+    <div className={`card mb-3 ${styles.glassCard}`}>
+      <Link href={`/products/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+        <div className="card-body">
+          <h5 className="card-title">{product.name}</h5>
+          <p className="card-text">by {product.company}</p>
+        </div>
+      </Link>
     </div>
   );
 };

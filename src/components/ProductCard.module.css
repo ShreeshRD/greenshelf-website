@@ -1,0 +1,14 @@
+.glassCard {
+  background: rgba(255, 255, 255, 0.1) !important; /* Use !important to override Bootstrap */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.glassCard:hover {
+  transform: translateY(-5px); /* Move the card up on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}

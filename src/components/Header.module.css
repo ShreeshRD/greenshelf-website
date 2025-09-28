@@ -10,6 +10,14 @@
   transition: color 0.3s;
 }
 
+.navLink:hover {
+  color: var(--algae-white);
+}
+
+.navLink.active {
+  color: var(--bio-lume-cyan);
+}
+
 .navLink::after {
   content: '';
   position: absolute;
@@ -47,4 +55,8 @@
 .signupBtn:hover {
   background-color: #63e6be; /* A slightly darker cyan */
   border-color: #63e6be;
+}
+
+.logo {
+  border-radius: 50%;
 }

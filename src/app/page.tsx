@@ -24,7 +24,7 @@ export default function Home() {
           <input
             type="search"
             className={`form-control ${styles.searchInput}`}
-            placeholder="Search for bio-plastics, lab-grown leather, algae-based nutrients..."
+            placeholder="Search for antibodies, reagents..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
