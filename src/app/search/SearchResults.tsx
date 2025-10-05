@@ -9,9 +9,42 @@ const SearchResults = () => {
 
   // Mock data for now
   const mockProducts = [
-    { id: '1', name: 'Bio-plastic Pellets', company: 'EcoInnovate' },
-    { id: '2', name: 'Lab-grown Leather', company: 'GenLeath' },
-    { id: '3', name: 'Algae-based Nutrients', company: 'NutriBloom' },
+    {
+      id: '1',
+      name: 'M199 media',
+      company: 'Gibco',
+      commonName: 'M199 media',
+      parentCompany: 'Gibco',
+      technique: 'parasite culture',
+      category: 'reagent',
+      companyLocation: 'Varanasi, India',
+      companyType: 'Biotechnology',
+      citationExcerpt: 'Leishmania antigens activated CD4+ T cells expressing CD200R receptors are the prime IL-10 producing phenotype and an important determinant of visceral leishmaniasis pathogenesis',
+    },
+    {
+      id: '2',
+      name: 'fetal bovine serum',
+      company: 'Gibco',
+      commonName: 'fetal bovine serum',
+      parentCompany: 'Gibco',
+      technique: 'parasite culture',
+      category: 'reagent',
+      companyLocation: 'Varanasi, India',
+      companyType: 'Biotechnology',
+      citationExcerpt: 'Leishmania antigens activated CD4+ T cells expressing CD200R receptors are the prime IL-10 producing phenotype and an important determinant of visceral leishmaniasis pathogenesis',
+    },
+    {
+      id: '3',
+      name: 'penicillin',
+      company: 'Sigma',
+      commonName: 'penicillin',
+      parentCompany: 'Sigma',
+      technique: 'parasite culture',
+      category: 'chemical',
+      companyLocation: 'Varanasi, India',
+      companyType: 'Biotechnology',
+      citationExcerpt: 'Leishmania antigens activated CD4+ T cells expressing CD200R receptors are the prime IL-10 producing phenotype and an important determinant of visceral leishmaniasis pathogenesis',
+    },
   ];
 
   return (
