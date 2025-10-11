@@ -16,9 +16,11 @@ export default function Home() {
   };
 
   return (
-    <div className="text-center">
-      <h1 className="display-4 fw-bold">Nature, Engineered.</h1>
-      <p className="lead">Discover the future of sustainable living.</p>
+    <div className="text-center d-flex flex-column justify-content-center flex-grow-1 position-relative">
+      <div className={`position-absolute w-100 ${styles.tagline}`} style={{ top: '15vh', left: '50%', transform: 'translateX(-50%)' }}>
+        <h1 className="display-4 fw-bold">Nature, Engineered.</h1>
+        <p className="lead">Discover the future of sustainable living.</p>
+      </div>
       <div className="col-lg-6 mx-auto">
         <form onSubmit={handleSearch} className={`d-flex ${styles.searchForm}`}>
           <input

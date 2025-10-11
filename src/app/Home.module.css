@@ -6,7 +6,7 @@
   border-radius: 50px; /* pill-shaped */
   padding: 1rem 2rem;
   font-size: 1.25rem;
-  border: 2px solid transparent;
+  border: 2px solid #343a40;
   transition: border-color 0.3s;
 }
 
@@ -19,12 +19,17 @@
   border-radius: 50px; /* pill-shaped */
   padding: 1rem 2rem;
   font-size: 1.25rem;
-  background-color: var(--bio-lume-cyan);
-  color: var(--carbon-black);
+  background-color: var(--deep-chlorophyll-green);
+  color: var(--algae-white);
   border: none;
   transition: background-color 0.3s;
 }
 
 .searchButton:hover {
-  background-color: #63e6be; /* A slightly darker cyan */
+  background-color: #0E4F43;
+}
+
+.tagline h1,
+.tagline p {
+  color: var(--deep-chlorophyll-green);
 }

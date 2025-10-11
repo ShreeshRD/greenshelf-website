@@ -1,0 +1,6 @@
+.details h2,
+.details p,
+.details h5,
+.details .blockquote {
+  color: var(--deep-chlorophyll-green);
+}

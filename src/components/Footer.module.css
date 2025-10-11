@@ -2,3 +2,39 @@
   background-color: var(--deep-chlorophyll-green);
   color: var(--algae-white);
 }
+
+.footerLink {
+  position: relative;
+  color: var(--algae-white);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.875rem; /* smaller font */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footerLink:hover {
+  color: var(--algae-white);
+}
+
+.footerLink.active {
+  color: var(--bio-lume-cyan);
+}
+
+.footerLink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px; /* adjusted for smaller footer */
+  left: 0;
+  background-color: var(--bio-lume-cyan);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.footerLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

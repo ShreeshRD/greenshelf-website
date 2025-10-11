@@ -17,16 +17,25 @@
 }
 
 body {
-  background: var(--background);
-  background-image: url('/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #E1F0E1; /* A light, pastel green */
+  background-image: 
+    radial-gradient(circle at 100% 150%, #D1E7D1 0%, #E1F0E1 15%, #C1E1C1 20%, #C1E1C1 27%, #E1F0E1 30%, #D1E7D1 47%, #C1E1C1 60%, #C1E1C1 70%, #E1F0E1 80%, #D1E7D1 90%, #C1E1C1 100%),
+    linear-gradient(to top right, #F1FAF1, #D1E7D1); /* Light green gradient */
+  background-size: 100% 100%, 100% 100%;
   color: var(--foreground);
   font-family: var(--font-inter);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-manrope);
+}
+
+.text-muted {
+  color: var(--deep-chlorophyll-green) !important;
+  opacity: 0.75;
+}
+
+.card {
+  background-color: transparent;
+  border: 1px solid var(--deep-chlorophyll-green);
 }

@@ -1,3 +1,4 @@
+
 .header {
   background-color: var(--deep-chlorophyll-green);
   color: var(--algae-white);
@@ -59,4 +60,10 @@
 
 .logo {
   border-radius: 50%;
+}
+
+.centeredLogo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

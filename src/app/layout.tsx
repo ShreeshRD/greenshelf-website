@@ -16,7 +16,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Greenshelf",
+  title: "greenshelf",
   description: "A Marketplace for Sustainable Biotechnology",
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${inter.variable} ${manrope.variable} antialiased d-flex flex-column flex-grow-1`}
       >
         <Header />
-        <main className="container my-4 flex-grow-1">{children}</main>
+        <main className="container my-4 flex-grow-1 d-flex flex-column">{children}</main>
         <Footer />
       </body>
     </html>

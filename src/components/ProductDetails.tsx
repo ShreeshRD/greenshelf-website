@@ -1,3 +1,5 @@
+import styles from './ProductDetails.module.css';
+
 interface Product {
   id: string;
   name: string;
@@ -24,7 +26,7 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
           <p>Product Image Gallery</p>
         </div>
       </div>
-      <div className="col-md-6">
+      <div className={`col-md-6 ${styles.details}`}>
         <h2>{product.name}</h2>
         <p className="text-muted">{product.commonName}</p>
         <p><strong>Company:</strong> {product.company} ({product.parentCompany})</p>

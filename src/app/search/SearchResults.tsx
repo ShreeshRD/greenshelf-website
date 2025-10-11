@@ -2,6 +2,7 @@
 
 import { useSearchParams } from 'next/navigation';
 import ProductCard from '@/components/ProductCard';
+import styles from './SearchPage.module.css';
 
 const SearchResults = () => {
   const searchParams = useSearchParams();
@@ -49,7 +50,7 @@ const SearchResults = () => {
 
   return (
     <div>
-      <h1 className="mb-4">Search Results for &quot;{query}&quot;</h1>
+      <h1 className={`mb-4 ${styles.title}`}>Search Results for &quot;{query}&quot;</h1>
       <div className="row">
         {mockProducts.length > 0 ? (
           mockProducts.map(product => (

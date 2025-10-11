@@ -1,3 +1,5 @@
+import styles from './AssociatedPaperDetails.module.css';
+
 interface Paper {
   title: string;
   authors: string[];
@@ -14,7 +16,7 @@ interface AssociatedPaperDetailsProps {
 const AssociatedPaperDetails = ({ paper }: AssociatedPaperDetailsProps) => {
   return (
     <div className="mt-5">
-      <h3>Associated Research Paper</h3>
+      <h3 className={styles.title}>Associated Research Paper</h3>
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{paper.title}</h5>

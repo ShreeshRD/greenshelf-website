@@ -4,7 +4,7 @@
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  color: var(--deep-chlorophyll-green);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
 }
 
