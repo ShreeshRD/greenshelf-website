@@ -51,10 +51,10 @@ const SearchResults = () => {
   return (
     <div>
       <h1 className={`mb-4 ${styles.title}`}>Search Results for &quot;{query}&quot;</h1>
-      <div className="row">
+      <div className={styles.resultsContainer}>
         {mockProducts.length > 0 ? (
           mockProducts.map(product => (
-            <div className="col-md-4" key={product.id}>
+            <div key={product.id}>
               <ProductCard product={product} />
             </div>
           ))

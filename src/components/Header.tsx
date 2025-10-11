@@ -10,11 +10,11 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className={`p-4 ${styles.header}`}>
+    <header className={`${styles.header} ${styles.fixedHeight}`}>
       <div className="container">
         <div className="d-flex flex-wrap align-items-center position-relative">
           <Link href="/" className={`d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ${styles.centeredLogo}`}>
-            <h2 className="ms-3">greenshelf</h2>
+            <h2 className="ms-3" style={{ position: 'relative', left: '-30px' }}>greenshelf.ai</h2>
           </Link>
 
           {pathname !== '/' && (

@@ -2,6 +2,13 @@
 .header {
   background-color: var(--deep-chlorophyll-green);
   color: var(--algae-white);
+  display: flex;
+  align-items: center;
+}
+
+.fixedHeight {
+  height: 70px;
+  padding: 0;
 }
 
 .navLink {

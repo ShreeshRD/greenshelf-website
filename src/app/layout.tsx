@@ -26,12 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="d-flex flex-column min-vh-100">
+    <html lang="en">
       <body
-        className={`${inter.variable} ${manrope.variable} antialiased d-flex flex-column flex-grow-1`}
+        className={`${inter.variable} ${manrope.variable} antialiased grid-layout`}
       >
         <Header />
-        <main className="container my-4 flex-grow-1 d-flex flex-column">{children}</main>
+        <main className="container">{children}</main>
         <Footer />
       </body>
     </html>

@@ -16,7 +16,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-md-4 text-center">
-            <span>&copy; {new Date().getFullYear()} Greenshelf. All rights reserved.</span>
+            <span>&copy; {new Date().getFullYear()} greenshelf.ai All rights reserved.</span>
           </div>
           <div className="col-md-4"></div>
         </div>

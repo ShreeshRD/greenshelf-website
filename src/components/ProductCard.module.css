@@ -6,9 +6,33 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--deep-chlorophyll-green);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+  margin-bottom: 1rem;
 }
 
 .glassCard:hover {
   transform: translateY(-5px); /* Move the card up on hover */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.score {
+  background-color: var(--deep-chlorophyll-green);
+  color: var(--algae-white);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.visitBtn {
+  background-color: transparent;
+  border: 1px solid var(--deep-chlorophyll-green);
+  color: var(--deep-chlorophyll-green);
+}
+
+.visitBtn:hover {
+  background-color: var(--deep-chlorophyll-green);
+  color: var(--algae-white);
 }
